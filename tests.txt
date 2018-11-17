@@ -1,0 +1,50 @@
+1) t1.py - cs miss latency 
+Description -
+loads CS with entries and then measure the lookup time for multiple packets
+
+d ndnpingserver /ndn/d-site/d/prefix4/prefix5/prefix6/prefix7/prefix8/prefix9/prefix10
+
+nCS
+empty
+10000
+25000
+40000
+55000
+65535
+65535
+
+2) t2.py - cs hit - miss latency 
+
+3) t3.py multiple sonusmer should request same data
+
+4) flooding interests .
+a ndnpind /ndn/d-site/d -c 1 is called multiple times in for loop
+
+req2 = 2 consumers calls the same request batch at the same time to cause PIT hit scenario.
+
+5) t5 hit rate a A vs number of incoming requests at producer
+
+6) t6 calls ndnping faster
+
+7) t6 testing avg ping hop count
+
+8) throughput measurement
+
+
+d ndnputchunks /ndn/d-site/d/10MB.txt < /home/lenovo/Dropbox/files/10MB.txt &
+a ndncatchunks -d iterative -v /ndn/d-site/d/10MB.txt &> /home/lenovo/Dropbox/10mb.txt
+
+9) ndnchunks throughput
+
+ b echo 'HELLO WORLD' | ndnpoke /ndn/b-site/b/hello &
+		a ndnpeek -p /ndn/b-site/b/hello
+
+
+b echo 'HELLO WORLD' | ndnpoke ndn:/localhost/demo/hello &
+a nfdc route add ndn:/localhost/demo/hello  264
+a ndnpeek ndn:/localhost/demo/hello | ndn-dissect
+
+
+
+
+

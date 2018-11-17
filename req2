@@ -1,0 +1,11 @@
+#!/bin/bash
+# how to run - a sh /home/lenovo/Dropbox/scripts/req2
+echo "hello 2 requestors"
+# manually - ndnping /ndn/metrics/zero -i 1 -c 1 -o 1 -n 123456 &> /home/lenovo/Dropbox/req3.txt 
+ndnping /ndn/d-site/d -i 1 -c 500 -n 333333 &> /home/lenovo/Dropbox/req1.txt
+ndnping /ndn/d-site/d -i 2 -c 500 -n 333333 &> /home/lenovo/Dropbox/req2.txt 
+ndnping /ndn/d-site/d -i 2 -c 500 -n 333333 &> /home/lenovo/Dropbox/req3.txt 
+# manually - ndnping /ndn/metrics/show -i 1 -c 1 -o 1 -n 123456 &> /home/lenovo/Dropbox/req3.txt 
+
+
+
