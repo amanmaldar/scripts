@@ -21,6 +21,7 @@ empty
 a ndnpind /ndn/d-site/d -c 1 is called multiple times in for loop
 
 req2 = 2 consumers calls the same request batch at the same time to cause PIT hit scenario.
+pit hit rate vs processing latency 
 
 5) t5 hit rate a A vs number of incoming requests at producer
 
@@ -43,6 +44,9 @@ a ndncatchunks -d iterative -v /ndn/d-site/d/10MB.txt &> /home/lenovo/Dropbox/10
 b echo 'HELLO WORLD' | ndnpoke ndn:/localhost/demo/hello &
 a nfdc route add ndn:/localhost/demo/hello  264
 a ndnpeek ndn:/localhost/demo/hello | ndn-dissect
+
+Packet Processing Latencies on Host
+
 
 
 
