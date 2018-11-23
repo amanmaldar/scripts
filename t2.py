@@ -24,68 +24,68 @@ bashCommand[0] = zeroCommand
 #measurement 1
 bashCommand[1] = " ndnping " + interestPrefix + " -i 1 -c 5000 -n 1"				# request 5000 packets and call show
 bashCommand[2] = showCommand	# miss
-bashCommand[0] = zeroCommand
-bashCommand[3] = " ndnping " + interestPrefix + " -i 1 -c 5000 -n 1"				# request same 5000 packets and call show
-bashCommand[4] = showCommand	# hit
+bashCommand[3] = zeroCommand
+bashCommand[4] = " ndnping " + interestPrefix + " -i 1 -c 5000 -n 1"				# request same 5000 packets and call show
+bashCommand[5] = showCommand	# hit
 
 # setting up cs
-bashCommand[5] = " ndnping " + interestPrefix + " -i 1 -c 5000 -n 5001"				# load 5000 more packets nCS = 10000
-bashCommand[6] = zeroCommand
+bashCommand[6] = " ndnping " + interestPrefix + " -i 1 -c 5000 -n 5001"				# load 5000 more packets nCS = 10000
+bashCommand[7] = zeroCommand
 #measurement 2
-bashCommand[7] = " ndnping " + interestPrefix + " -i 1 -c 5000 -n 10001"			# request 5000 packets and call show   
-bashCommand[8] = showCommand 	# miss
-bashCommand[0] = zeroCommand
-bashCommand[9] = " ndnping " + interestPrefix + " -i 1 -c 5000 -n 10001"			# request same 5000 packets and call show   
-bashCommand[10] = showCommand	# hit											
+bashCommand[8] = " ndnping " + interestPrefix + " -i 1 -c 5000 -n 10001"			# request 5000 packets and call show   
+bashCommand[9] = showCommand 	# miss
+bashCommand[10] = zeroCommand
+bashCommand[11] = " ndnping " + interestPrefix + " -i 1 -c 5000 -n 10001"			# request same 5000 packets and call show   
+bashCommand[12] = showCommand	# hit											
 
 # setting up cs
-bashCommand[11] = " ndnping " + interestPrefix + " -i 1 -c 10000 -n 15001"			# load 10000 more packets nCS = 25000
-bashCommand[12] = zeroCommand
+bashCommand[13] = " ndnping " + interestPrefix + " -i 1 -c 10000 -n 15001"			# load 10000 more packets nCS = 25000
+bashCommand[14] = zeroCommand
 #measurement 3
-bashCommand[13] = " ndnping " + interestPrefix + " -i 1 -c 5000 -n 25001"			# request 5000 packets and call show 
-bashCommand[14] = showCommand	# miss													 
-bashCommand[0] = zeroCommand
-bashCommand[15] = " ndnping " + interestPrefix + " -i 1 -c 5000 -n 25001"			# request same 5000 packets and call show 
-bashCommand[16] = showCommand	# hit										
+bashCommand[15] = " ndnping " + interestPrefix + " -i 1 -c 5000 -n 25001"			# request 5000 packets and call show 
+bashCommand[16] = showCommand	# miss													 
+bashCommand[17] = zeroCommand
+bashCommand[18] = " ndnping " + interestPrefix + " -i 1 -c 5000 -n 25001"			# request same 5000 packets and call show 
+bashCommand[19] = showCommand	# hit										
 
 # setting up cs
-bashCommand[17] = " ndnping " + interestPrefix + " -i 1 -c 10000 -n 30001"			# load 10000 more packets nCS = 40000
-bashCommand[18] = zeroCommand
+bashCommand[20] = " ndnping " + interestPrefix + " -i 1 -c 10000 -n 30001"			# load 10000 more packets nCS = 40000
+bashCommand[21] = zeroCommand
 #measurement 4
-bashCommand[19] = " ndnping " + interestPrefix + " -i 1 -c 5000 -n 40001"			# request 5000 packets and call show
-bashCommand[20] = showCommand	# miss
-bashCommand[0] = zeroCommand
-bashCommand[21] = " ndnping " + interestPrefix + " -i 1 -c 5000 -n 40001"			# request same 5000 packets and call show
-bashCommand[22] = showCommand	# hit										
-
-# setting up cs
-bashCommand[23] = " ndnping " + interestPrefix + " -i 1 -c 10000 -n 45001"			# load 10000 more packets nCS = 55000
+bashCommand[22] = " ndnping " + interestPrefix + " -i 1 -c 5000 -n 40001"			# request 5000 packets and call show
+bashCommand[23] = showCommand	# miss
 bashCommand[24] = zeroCommand
-#measurement 5
-bashCommand[25] = " ndnping " + interestPrefix + " -i 1 -c 5000 -n 55001"			# request 5000 packets and call show
-bashCommand[26] = showCommand	# miss
-bashCommand[0] = zeroCommand
-bashCommand[27] = " ndnping " + interestPrefix + " -i 1 -c 5000 -n 55001"			# request same 5000 packets and call show
-bashCommand[28] = showCommand	# hit 										
+bashCommand[25] = " ndnping " + interestPrefix + " -i 1 -c 5000 -n 40001"			# request same 5000 packets and call show
+bashCommand[26] = showCommand	# hit										
 
 # setting up cs
-bashCommand[29] = " ndnping " + interestPrefix + " -i 1 -c 5536 -n 60001"			# load 5535 more packets nCS = 65535
-bashCommand[30] = zeroCommand
+bashCommand[27] = " ndnping " + interestPrefix + " -i 1 -c 10000 -n 45001"			# load 10000 more packets nCS = 55000
+bashCommand[28] = zeroCommand
+#measurement 5
+bashCommand[29] = " ndnping " + interestPrefix + " -i 1 -c 5000 -n 55001"			# request 5000 packets and call show
+bashCommand[30] = showCommand	# miss
+bashCommand[31] = zeroCommand
+bashCommand[32] = " ndnping " + interestPrefix + " -i 1 -c 5000 -n 55001"			# request same 5000 packets and call show
+bashCommand[33] = showCommand	# hit 										
+
+# setting up cs
+bashCommand[34] = " ndnping " + interestPrefix + " -i 1 -c 5536 -n 60001"			# load 5535 more packets nCS = 65535
+bashCommand[35] = zeroCommand
 #measurement 6
-bashCommand[31] = " ndnping " + interestPrefix + " -i 1 -c 5000 -n 66001"			# request 5000 packets and call show
-bashCommand[32] = showCommand 	# miss
-bashCommand[0] = zeroCommand
-bashCommand[33] = " ndnping " + interestPrefix + " -i 1 -c 5000 -n 66001"			# request same 5000 packets and call show
-bashCommand[34] = showCommand 	# hit
+bashCommand[36] = " ndnping " + interestPrefix + " -i 1 -c 5000 -n 66001"			# request 5000 packets and call show
+bashCommand[37] = showCommand 	# miss
+bashCommand[38] = zeroCommand
+bashCommand[39] = " ndnping " + interestPrefix + " -i 1 -c 5000 -n 66001"			# request same 5000 packets and call show
+bashCommand[40] = showCommand 	# hit
 
 # Run 2 measurement for 65k+ scenario
 #measurement 7
-bashCommand[35] = zeroCommand
-bashCommand[36] = " ndnping " + interestPrefix + " -i 1 -c 5000 -n 73000"			# request 5000 packets and call show
-bashCommand[37] = showCommand	# miss
-bashCommand[0] = zeroCommand
-bashCommand[38] = " ndnping " + interestPrefix + " -i 1 -c 5000 -n 73000"			# request 5000 packets and call show
-bashCommand[39] = showCommand	# hit									
+bashCommand[41] = zeroCommand
+bashCommand[42] = " ndnping " + interestPrefix + " -i 1 -c 5000 -n 73000"			# request 5000 packets and call show
+bashCommand[43] = showCommand	# miss
+bashCommand[44] = zeroCommand
+bashCommand[45] = " ndnping " + interestPrefix + " -i 1 -c 5000 -n 73000"			# request 5000 packets and call show
+bashCommand[46] = showCommand	# hit									
 
 
 
