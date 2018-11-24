@@ -49,6 +49,10 @@ Packet Processing Latencies on Host
 
 
 
+I have a questions regarding writing a chapter on NDN modules - CS PIT FIB NameTree. 
+I plan on taking this content from NDN developer guide. The content is very crisp and well written. There really is no need to paraphrase it. Can I just reuse this content with the proper reference ?
+
+
 
 
 

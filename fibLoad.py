@@ -17,8 +17,10 @@ total = 0
 print "Loading FIB Entries"
 n = 0
 for n in range (0,1): #len(interestPrefix)
-	for i in range(80001,90004):
-		bashCommand = " nfdc route add "+ interestPrefix[n]+str(i)+" 264"  
+	for i in range(80001,90000):
+		
+		bashCommand = " nfdc route add "+ interestPrefix[n]+str(i)+" udp://129.62.205.73"  
+		# bashCommand = " nfdc route add "+ interestPrefix[n]+str(i)+" 264"  
 		output = subprocess.call(['bash', '-c', bashCommand + resultDir])
 		total += 1
 	print "done", n
