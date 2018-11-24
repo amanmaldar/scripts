@@ -4,7 +4,7 @@ import subprocess
 # How to run?
 # a /usr/bin/python /home/lenovo/Dropbox/scripts/fibLoad.py
 
-resultDir =  " >> /home/lenovo/Dropbox/loadingFib.txt"
+resultDir =  " >> /home/loadingFib.txt"
 interestPrefix = [ "/ndn/d-site/d/prefix4/prefix5/prefix6/prefix7/prefix8/prefix9/",
 "/ndn/d-site/d/prefix4/prefix5/prefix6/prefix7/prefix8/",
 "/ndn/d-site/d/prefix4/prefix5/prefix6/prefix7/",
