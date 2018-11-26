@@ -1,9 +1,5 @@
 # Description
-'''
-Prints Hit and Miss latencies 
-Prints processing time for packet on the requestor. measurements are made between onIncomingInterest and onOutgoingInterest. So It works well for intermediate forwarders.
-This doesn't work well if data is satisfied from CS.
-'''
+# pit processing time for FIB load scenario
 import subprocess
 
 bashCommand = {}
@@ -18,7 +14,7 @@ resultDir = " >> /home/amaldar/clientLogs_1.txt"
 
 
 print "Starting the pings"
-interestPrefix = "/ndn/d-site/d/prefix4/prefix5/prefix6/prefix7/prefix8/prefix9/prefix10"
+interestPrefix = "/ndn/d-site/d/"
 
 bashCommand[0] = zeroCommand
 #measurement 1

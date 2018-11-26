@@ -5,7 +5,8 @@ import subprocess
 # a /usr/bin/python /home/lenovo/Dropbox/scripts/fibLoad.py
 
 resultDir =  " >> /home/loadingFib.txt"
-interestPrefix = [ "/ndn/d-site/d/prefix4/prefix5/prefix6/prefix7/prefix8/prefix9/",
+interestPrefix = [ "/ndn/d-site/",
+"/ndn/d-site/d/prefix4/prefix5/prefix6/prefix7/prefix8/prefix9/",
 "/ndn/d-site/d/prefix4/prefix5/prefix6/prefix7/prefix8/",
 "/ndn/d-site/d/prefix4/prefix5/prefix6/prefix7/",
 "/ndn/d-site/d/prefix4/prefix5/prefix6/",
