@@ -4,6 +4,9 @@ import subprocess
 # How to run?
 # a /usr/bin/python /home/lenovo/Dropbox/scripts/fibLoad.py
 
+#  Adding route /ndn/d-site/81769 nexthop=267 origin=static cost=0
+
+
 resultDir =  " >> /home/loadingFib.txt"
 interestPrefix = [ "/ndn/d-site/",
 "/ndn/d-site/d/prefix4/prefix5/prefix6/prefix7/prefix8/prefix9/",
